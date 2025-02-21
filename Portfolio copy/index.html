@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maysur - Developer Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+rel="stylesheet"
+/>
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+<style>
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+background-color: hwb(209 5% 85%);
+color: white;
+font-family: Arial, Helvetica, sans-serif
+}
+
+nav {
+display: none;
+justify-content: space-around;
+align-items: center;
+height: 80px;
+background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+display: flex;
+justify-content: center;
+}
+
+nav ul li {
+list-style: none;
+margin: 0 23px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: white;
+}
+
+nav ul li a:hover {
+color: rgb(153, 153, 226);
+}
+
+.left {
+font-size: 1.5rem;
+}
+
+.firstSection {
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin: 120px 0;
+}
+
+.firstSection > div {
+display: flex;
+justify-content: space-around;
+margin: 23px 0;
+width: 30%;
+}
+
+.leftSection {
+font-size: 3rem;
+}
+
+.leftSection .btn {
+padding: 12px;
+background-color: hsl(210, 100%, 60%);
+color: hsl(210, 100%, 60%);
+border: 2px solid hsl(210, 100%, 60%);
+border-radius: 6px;
+font-size: 16px;
+cursor: pointer;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.leftSection .btn2 {
+padding: 12px;
+background: none;
+color: hsl(210, 100%, 60%);
+border: 2px solid hsl(210, 100%, 60%);
+border-radius: 6px;
+font-size: 16px;
+cursor: pointer;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn2:hover{
+background-color: hsl(210, 100%, 60%);
+color: white;
+border-radius: 6px;
+font-size: 16px;
+cursor: pointer;
+transition: 0.5s ease;
+}
+
+.btn:hover {
+background: none;
+color: hsl(210, 100%, 60%);
+border-radius: 6px;
+font-size: 16px;
+cursor: pointer;
+transition: 0.5s ease;
+}
+
+.rightSection img {
+width: 100%;
+border-radius: 50%;
+border: 5px solid hsl(210, 100%, 60%);
+}
+
+.purple {
+color: hsl(210, 100%, 60%);
+}
+
+#element {
+color: hsl(210, 100%, 60%);
+}
+
+
+#img-hero {
+width: 80%;
+margin: 50px 0;
+}
+
+.coder-badge {
+position: absolute;
+bottom: 25px;
+right: 114px;
+background-color: hwb(209 5% 85%); /* Background color */
+color: #00aaff; /* Text color */
+border-radius: 9999px;
+padding: 20px;
+width: 150px;
+box-shadow: 0px 4px 10px rgba(0, 170, 255, 0.5);
+}   
+
+.coder-badge code {
+font-size: 1.25rem;
+font-family: "Courier New", Courier, monospace;
+font-weight: bold;
+}
+
+.sec-head{
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 16px;
+    text-decoration-style: dashed;
+    color: rgb(95, 210, 245);
+}
+
+#Skills-text {
+font-size: 3rem;
+font-family: "Poppins", sans-serif;
+}
+/* Skills Section */
+.skills {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 35px;
+margin-top: 30px;
+}
+
+.skill-item {
+background-color: #142a3c;
+padding: 10px;
+border-radius: 8px;
+width: 12%;
+height: 120px; /* Increased height for better fit */
+text-align: center;
+transition: transform 0.3s ease;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.skill-item:hover {
+transform: scale(1.05);
+}
+
+.skill-icon {
+height: 50px; /* Adjusted height */
+width: 50px; /* Adjusted width */
+object-fit: contain; /* Ensures full visibility */
+}
+
+.skill-name {
+font-size: 1rem; /* Adjusted for better spacing */
+margin-top: 8px;
+}
+
+footer {
+padding: 20px;
+text-align: center;
+color: white;
+margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+nav ul {
+flex-direction: column;
+align-items: center;
+}
+
+.firstSection {
+flex-direction: column;
+}
+
+.firstSection > div {
+width: 100%;
+margin: 10px 0;
+}
+
+.leftSection {
+font-size: 2rem;
+text-align: center;
+}
+
+.rightSection img {
+width: 100%;
+}
+
+.secondSection {
+height: auto;
+padding: 20px;
+}
+
+.secondSection .box {
+flex-direction: column;
+}
+
+.secondSection .vertical {
+margin: 20px 0;
+}
+
+footer {
+padding: 20px;
+text-align: center;
+color: white;
+height: 100px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.footer {
+display: none;
+}
+
+.secondSection .vertical {
+margin: 0;
+height: unset;
+}
+
+.box {
+flex-direction: column;
+}
+
+.firstSection {
+flex-direction: column-reverse;
+}
+}
+</style>
+</head>
+
+<body>
+<main>
+<section class="firstSection">
+<div class="leftSection">
+<pre>
+Hi, My name is <span class="purple">Maysur</span>
+and I am a passionate
+<span id="element"></span>
+<div class="buttons">
+<a href="" download="Resume.pdf"><button class="btn">Download Resume</button></a> <a href="https://www.dropbox.com/scl/fo/vs757ibks7s9rtzwfo20l/AMChPxjxpEz2ONlToTXZcf4?rlkey=xvlntpj93hjklxcjr7ldttk3u&st=e2com6md&dl=0" target="_blank"><button class="btn2">Visit Dropbox</button></a> 
+
+</div>
+</pre>
+</div>
+<div class="rightSection">
+<img src="img/bg.png" alt="developer photo" />
+</div>
+</section>
+<div class="coder-badge">
+<code>&lt;coder/&gt;</code>
+</div>
+
+<section class="secondSection">
+<h1 class="sec-head">Skills & Technologies</h1>
+<div class="skills">
+<div class="skill-item"><img class="skill-icon" src="img/html.svg" alt="HTML"><div class="skill-name">HTML</div></div>
+<div class="skill-item"><img class="skill-icon" src="img/css.svg" alt="CSS"><div class="skill-name">CSS</div></div>
+<div class="skill-item"><img class="skill-icon" src="img/js.svg" alt="JavaScript"><div class="skill-name">JavaScript</div></div>
+<div class="skill-item"><img class="skill-icon" src="img/php.svg" alt="PHP"><div class="skill-name">PHP</div></div>
+<div class="skill-item"><img class="skill-icon" src="img/python.svg" alt="Python"><div class="skill-name">Python</div></div>
+<div class="skill-item"><img class="skill-icon" src="img/node-js.svg" alt="Node.js"><div class="skill-name">Node.js</div></div>
+</div>
+<div class="skills">
+<div class="skill-item"><img class="skill-icon" src="img/laravel.svg" alt="Laravel"><div class="skill-name">Laravel</div></div>
+<div class="skill-item"><img class="skill-icon" src="img/tailwind.svg" alt="Tailwind"><div class="skill-name">Tailwind</div></div>
+<div class="skill-item"><img class="skill-icon" src="img/react.svg" alt="React"><div class="skill-name">React</div></div>
+<div class="skill-item"><img class="skill-icon" src="img/mongodb.svg" alt="MongoDB"><div class="skill-name">MongoDB</div></div>
+<div class="skill-item"><img class="skill-icon" src="img/mysql.svg" alt="MySQL"><div class="skill-name">MySQL</div></div>
+<div class="skill-item"><img class="skill-icon" src="img/git.svg" alt="Git"><div class="skill-name">Git</div></div>
+</div>
+<div class="skills">
+<div class="skill-item"><img class="skill-icon" src="img/wordpress.svg" alt="WordPress"><div class="skill-name">WordPress</div></div>
+<div class="skill-item"><img class="skill-icon" src="img/sass.svg" alt="Sass"><div class="skill-name">Sass</div></div>
+<div class="skill-item"><img class="skill-icon" src="img/express.svg" alt="Express"><div class="skill-name">Express</div></div>
+<div class="skill-item"><img class="skill-icon" src="img/redux.svg" alt="Redux"><div class="skill-name">Redux</div></div>
+<div class="skill-item"><img class="skill-icon" src="img/next.svg" alt="Next.js"><div class="skill-name">Next.js</div></div>
+<div class="skill-item"><img class="skill-icon" src="img/typescript.svg" alt="TypeScript"><div class="skill-name">TypeScript</div></div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="footer">
+<p>&copy; 2025 Maysur's Developer Portfolio. All rights reserved.</p>
+</div>
+</footer>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+var typed = new Typed("#element", {
+strings: [
+"Web Developer",
+"Graphic Designer",
+"Video editor",
+"Web Designer",
+],
+typeSpeed: 50,
+});
+</script>
+</body>
+</html>
